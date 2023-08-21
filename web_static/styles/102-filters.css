@@ -6,17 +6,19 @@
     border:1px solid #DDDDDD;
     border-radius: 4px;
     display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 1fr ; */
     align-items: center;
 }
 
 
 section .locations, section .amenities{
     height: 100%;
-    width: 25%;
+    min-width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:0 40px;
+    padding:0 10px;
 }
 
 section .locations{
@@ -79,4 +81,16 @@ section .amenities .popover{
 
 .state-container{
     padding:15px;
+}
+
+@media(max-width:900px){
+    section .locations, section .amenities{
+        padding: 10px;
+    }
+}
+@media(max-width:400px){
+    section .locations, section .amenities{
+        padding: 5px;
+    }
+
 }
